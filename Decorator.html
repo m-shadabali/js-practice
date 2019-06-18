@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Decorator</title>
+</head>
+<body>
+<script type="text/javascript">
+	
+
+
+	var task = function (name) {
+	  this.name  = name;
+	  this.completed = false;
+
+	};
+
+task.prototype.complete = function() {
+	alert('complete task: '+ " " + this.name);
+	this.completed = true;
+};
+
+task.prototype.save = function(){
+	alert('saving task:'+ " " + this.name);
+};
+
+var Mytask = new task("shadab");
+Mytask.complete();
+Mytask.save();
+
+var urgentTask = new task('muskan');
+urgentTask.priority = 0;
+urgentTask.notify = function(){
+console.log('Hello');
+};
+urgentTask.notify();
+urgentTask.complete();
+urgentTask.save();
+
+
+</script>
+
+</body>
+</html>

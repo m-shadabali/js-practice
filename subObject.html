@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>subobject</title>
+</head>
+<body>
+<script type="text/javascript">
+	
+var task = function(name){
+	this.name = name;
+	this.completed = false;
+
+};
+task.prototype.complete = function(){
+	alert('completing task: '+ this.name);
+	this.completed = true;
+
+};
+
+task.prototype.save = function(){
+	alert('saving task: ' + this.name);
+};
+var mytask = new task('raz');
+mytask.complete();
+mytask.save();
+
+
+UrgentTask.prototype = Object.create(task.prototype);
+var UrgentTask = function(name , priority){
+	task.call(this,name);
+	this.priority = priority;
+};
+
+var ut = new UrgentTask('This is Urgent',  1);
+alert(ut);
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
+

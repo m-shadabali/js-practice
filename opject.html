@@ -1,0 +1,38 @@
+<html>
+<head>
+    
+    <title>Home</title>
+    
+    </head>
+<body>
+    
+    <h1 align= "center">Home</h1>
+    <script>
+    function student(name, age, classes){
+       this.name = name;
+        this.age= age;
+       this.classes = classes; 
+       
+       
+       
+   }
+        var atul = new student("atul","feefteen","8th");
+        alert(atul.classes);
+        
+        function teachers(name, age, roomNumber){
+            this.name = name;
+            this.age = age;
+            this.roomNumber = roomNumber;
+            
+        }
+        var raaj = new teachers("shadab", "49 year old", "15nd");
+        var raani = new teachers("raani", "26 year old", "20nd");
+        alert(raaj.age);
+        alert(raani.name+" "+raani.age);
+        
+    
+    </script>
+    </body>
+
+
+</html>

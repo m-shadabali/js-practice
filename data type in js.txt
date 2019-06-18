@@ -1,0 +1,7 @@
+there is three data type in java script 
+1.number= all mathmethical number are belonges in this categary including decimal or none decimal number
+Example 1,2.1
+
+2.srings= all word belongs this categary 
+3. object=Object properties are written as name:value pairs, separated by commas.
+

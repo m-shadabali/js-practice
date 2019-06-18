@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ProtoType</title>
+</head>
+<body>
+
+
+
+
+<script type="text/javascript">
+	
+
+function cat(name, color){
+	this.name = name
+	this.color = color
+
+}
+cat.prototype.age = 4
+
+var foo = new cat('ram','black')
+
+var raaz = new cat('raaz','blue')
+alert(foo.age)
+alert(raaz.age)
+alert(Object.keys(foo))
+alert(foo.hasOwnProperty('color'))
+
+</script>
+</body>
+</html>

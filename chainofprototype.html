@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Speak function in prototype</title>
+</head>
+<body>
+<script type="text/javascript">
+	function Animal(){
+
+
+	}
+Animal.prototype.speak = function(){
+	alert("Grunt")
+}
+function cat(name, color){
+	this.name = name
+	this.color = color
+
+}
+cat.prototype = Object.create(Animal.prototype)
+
+var foo = new cat('ram','black')
+
+var raaz = new cat('raaz','blue')
+foo.speak()
+
+</script>
+</body>
+</html>

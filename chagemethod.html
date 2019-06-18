@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Method change</title>
+
+
+	<script type="text/javascript">
+		
+'use strict'
+
+		var cat = {
+
+			name:'foo',
+			color:'white'
+		}
+
+Object.defineProperty(cat,'name',{writable:false})
+cat.name = 'hello'
+		alert(cat.name)
+	</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<html>
+<head>
+    
+   <title>Scope Example</title>
+    
+    <!-- there are two Type of Scope in javascript first one is global and second is local scope-->
+    
+    <!--global scope are there scope which are outside function and there are called anywhere from webpage-->
+    <!--local scope are there scope which are inside function and there are only called in function --->
+    
+    
+    </head>
+<body>
+    
+    
+    <script>
+    var tree = "3";
+    function alertNumber(){
+        var one = "1";
+        alert(one);
+    function alertOtherNumber(){
+        var two = "2";
+        alert(two);
+        alert(tree);
+    }
+        
+     alertOtherNumber();   
+        
+    }
+
+    alertNumber();
+    </script>
+    </body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h2>HTML Forms</h2>
+
+    <form action="/action" method="post" id="user-from">
+    
+        <input type="text" name="user" placeholder="user">
+        <span id="error"></span>
+        <br><br>
+    
+        <input type="text" name="lastname" placeholder="lastname">
+        
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+
+    <script>
+        var form = document.getElementById("user-from");
+        
+        form.addEventListener('submit', event => {
+            let user = form.elements['user'];
+            let userError = document.getElementById("error");
+             console.log(user.value);
+            
+            if(user.value.length < 4){
+                userError.textContent = 'invaid entry';
+                user.style.borderColor = 'blue';
+                userError.style.color = 'red';
+                user.focus();
+               }
+            
+             event.preventDefault();
+    });
+       
+              
+    </script>
+</body>
+
+</html>
