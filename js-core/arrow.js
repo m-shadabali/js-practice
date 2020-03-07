@@ -14,5 +14,4 @@ function F(nums){
 }
  console.log(F([5, 6, 5,7]));
  
-
- console.log(modifyArray([5, 8, 9, 4, 16]))
+// console.log(modifyArray([5, 8, 9, 4, 16]))
