@@ -1,0 +1,24 @@
+<html>
+<head>
+
+
+</head>
+<body>
+    <h1>Do to list</h1>
+  <input id = 'user-value'>
+<ol class="to-do-list">
+ 
+</ol>
+
+
+<script>
+
+ var parentContainer = document.getElementById('to-do-list');
+ var text = document.getElementById('user-value').value;
+ var newItem = document.createElement('li');
+ newItem.innerText = text;
+ parentContainer.append(newItem);
+
+</script>
+</body>
+</html>
