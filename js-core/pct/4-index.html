@@ -1,0 +1,30 @@
+<html>
+
+<head>
+
+</head>
+<body>
+<div class="root">
+
+
+</div>
+
+<script>
+
+    const items = [5, 6, 8, 6];
+    const root = document.getElementById('root');
+    const listFragment = document.createDocumentFragment();
+items.forEach(item => {
+    const currentItemElement = document.createElement('li');
+   
+    currentItemElement.innerText = item;
+    listFragment.appendChild(currentItemElement)
+})
+
+
+
+
+</script>
+</body>
+
+</html>
