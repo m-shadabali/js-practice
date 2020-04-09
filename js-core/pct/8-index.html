@@ -1,0 +1,247 @@
+Skip to main content
+
+Packt - Workshop LearningPackt - Workshop Learning
+GO TO DASHBOARD
+The JavaScript Workshop
+22% complete
+
+Workshop Onboarding
+Completed3 / 3
+1. Getting to Know JavaScript
+Completed14 / 14
+2. Working with JavaScript
+Completed15 / 15
+3. Programming Fundamentals
+14 / 51
+Overview
+TEXT
+Data Types
+TEXT
+Exercise 3.01: Implementing Expressions and Operators
+TEXT
+Exercise 3.01: Implementing Expressions and Operators
+VIDEO
+ · 3 MIN
+Using Variables and Constants in Expressions
+TEXT
+Exercise 3.02: Working with Variables Using the Web Browser Console
+TEXT
+Exercise 3.02: Working with Variables Using the Web Browser Console
+VIDEO
+ · 1 MIN
+Functions that Return Values
+TEXT
+Exercise 3.03: Using Functions in Expressions
+TEXT
+Exercise 3.03: Using Functions in Expressions
+VIDEO
+ · 2 MIN
+The Object Data Type
+TEXT
+Exercise 3.04: Working with Ready-Made Objects
+TEXT
+Exercise 3.04: Working with Ready-Made Objects
+VIDEO
+ · 2 MIN
+Self-Made Objects
+TEXT
+Syntax
+TEXT
+Conditional and Loop Flow
+TEXT
+Exercise 3.05: Writing an if statement
+TEXT
+Exercise 3.05: Writing an if statement
+VIDEO
+ · 1 MIN
+Exercise 3.06: Writing an if...else Statement
+TEXT
+Exercise 3.06: Writing an if...else Statement
+VIDEO
+ · < 1 MIN
+if Statements with Multiple else if Statements
+TEXT
+Exercise 3.07: Writing an if Statement with Multiple if else Statements and the else Statement
+TEXT
+Exercise 3.07: Writing an if Statement with Multiple if else Statements and the else Statement
+VIDEO
+ · 5 MIN
+Exercise 3.08: Writing a switch Statement and Testing it
+TEXT
+Exercise 3.08: Writing a switch Statement and Testing it
+VIDEO
+ · 3 MIN
+Exercise 3.09: Writing a for Loop and Testing it
+TEXT
+Exercise 3.09: Writing a for Loop and Testing it
+VIDEO
+ · 2 MIN
+Exercise 3.10: Writing a do...while Loop and Testing it
+TEXT
+Exercise 3.10: Writing a do...while Loop and Testing it
+VIDEO
+ · 1 MIN
+Exercise 3.11: Writing a while Loop and Testing it
+TEXT
+Exercise 3.11: Writing a while Loop and Testing it
+VIDEO
+ · 1 MIN
+Exercise 3.12: Writing a for...in Loop and Testing it
+TEXT
+Exercise 3.12: Writing a for...in Loop and Testing it
+VIDEO
+ · 1 MIN
+Exercise 3.13: Writing a for...of Loop and Testing it
+TEXT
+Exercise 3.13: Writing a for...of Loop and Testing it
+VIDEO
+ · 1 MIN
+continue Statement
+TEXT
+Writing and Invoking Functions
+TEXT
+Exercise 3.14: Writing a Function as a Statement and Invoking It
+TEXT
+Exercise 3.14: Writing a Function as a Statement and Invoking It
+VIDEO
+ · 2 MIN
+Exercise 3.15: Writing a Function as an Expression and Invoking It
+TEXT
+Exercise 3.15: Writing a Function as an Expression and Invoking It
+VIDEO
+ · 1 MIN
+Exercise 3.16: Writing an Arrow Function and Invoking It
+TEXT
+Exercise 3.16: Writing an Arrow Function and Invoking It
+VIDEO
+ · < 1 MIN
+Reacting to User Input Events and Updating the DOM
+TEXT
+Exercise 3.17: Working with DOM Manipulation and Events
+TEXT
+Exercise 3.17: Working with DOM Manipulation and Events
+VIDEO
+ · 3 MIN
+Debugging
+TEXT
+Logic Bugs
+TEXT
+Activity 3.01: The To-Do List Shuffle Program
+TEXT
+Summary
+TEXT
+Quiz 3
+QUIZ
+ · 15 QUESTIONS
+4. JavaScript Libraries and Frameworks
+Completed22 / 22
+5. Beyond the Fundamentals
+30 / 39
+6: Understanding Core Concepts
+0 / 21
+7. Popping the Hood
+0 / 14
+8. Browser APIs
+0 / 28
+9: Working with Node.js
+0 / 28
+10: Accessing External Resources
+0 / 14
+11. Creating Clean and Maintainable Code
+0 / 18
+12. Using Next-Generation JavaScript
+0 / 21
+13. JavaScript Programming Paradigms
+0 / 15
+14. Understanding Functional Programming
+0 / 27
+15. Asynchronous Tasks
+0 / 15
+Assessment Test
+0 / 1
+Bonus Chapter 1: Stepping into the Future
+0 / 19
+Bonus Chapter 2: Testing Your Code
+0 / 27
+Activity Solutions
+1 / 48
+Post Assessment
+0 / 1
+Self-Made Objects
+
+1 DISCUSSIONS
+Self-Made Objects
+You often have to create objects when developing real-world applications. They help you organize a set of data and functions that work together. Think about what properties and methods you may use for a stopwatch object.
+
+You can see that we named the properties and methods as follows:
+
+elapsedTime is a property with a data type number. It displays the seconds that have elapsed since timing started.
+resultsHistory is a property data type object. It displays a list of previous timings.
+isTiming is a property data type Boolean. It displays the state of its timing.
+isPaused is a property data type Boolean. It displays the state if paused.
+start is a method data type function. It starts timing and sets elapsedTime to 0.
+pause is a method data type function. It pauses the timing.
+resume is a method data type function. It resumes the timing.
+stop is a method data type function. It stops timing and adds the result to resultsHistory.
+Object Dot Notation
+To reference object properties and methods, you use dot notation. This is the object name, followed by a period, and then the name of the property or method. Let's use the stopWatch object as an example:
+
+stopWatch.elapsedTime
+stopWatch.start()
+stopWatch.start()
+stopWatch.stop()
+Methods require parentheses after the name. If the method requires data input, the data is placed inside the parentheses.
+
+The Array Object
+Arrays are objects that represent a list of values. Each item in the list is called an element. To initialize an array, you can set it to an array literal. An array literal is a comma-separated list of expressions enclosed in square brackets, like so:
+
+["Saab", "Ford", "BMW", "GM"]
+Elements in arrays can be different data types. Often, all the elements are the same data type:
+
+["Milk", false, 123, document,"Gold", -.9876]
+Elements in a literal array can be expressions, but they are evaluated and only the expression values are stored:
+
+[price - cost, Math.random(), document.title, someVariable / 2]
+Variables and object properties can contain arrays:
+
+let todoList = [
+    "Wash Laundry",
+    "Clean Silver",
+    "Write Letters",
+    "Purchase Groceries",
+    "Retrieve Mail",
+    "Prepare Dinner"
+]
+game.scores = [120, 175, 145, 200]
+Array elements can be arrays:
+
+notes = [
+  [
+    "Wash Laundry",
+    "Clean Silver",
+    "Write Letters"
+  ], 123, "999-999-9999"
+]
+The array objects with useful properties and methods are as follows:
+
+length is a property with a number data-type that displays the number of items in the array.
+push is a method with a number data-type that appends an element and returns the new length.
+unshift is a method with a number data-type that prepends an element and returns the new length.
+shift is a method with a mixed data-type that removes the first element and returns the removed element's value.
+pop is a method with a mixed data-type that removes the last element to return the removed element's value.
+concat is a method with a function data-type that merges two or more arrays to return a new array.
+Using the Console Object
+The console object has a method called log that we can use to test expressions in a JavaScript program. It takes an unlimited number of expressions separated by commas. All the expressions we enter into the console window would work with the console.log method. It evaluates the expressions and returns their results in the console. Multiple expressions are separated by a space.
+
+The console.log method will be used in the upcoming exercises. Let's have a look at its syntax:
+
+console.log(expression 1[, expression 2][, expression n])
+Here are some examples of the console.log method:
+
+console.log("Odd number count started!");
+console.log("Iteration:", i);
+console.log("Number:", number);
+console.log(oddsCount + " odd numbers found!");
+console.log(document);
+
+COMPLETE & CONTINUE
