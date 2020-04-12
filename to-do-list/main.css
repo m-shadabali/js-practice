@@ -1,0 +1,43 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color:rgb(255, 0, 255);
+}
+ 
+.input-user{
+text-align: center;
+margin-top: 420px;
+
+}
+input{
+    width: 280px;
+    height: 40;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+.to-do-list{
+    text-align: center;
+}
+ul {
+    width: 30%;
+    margin: auto;
+}
+i:hover{
+    cursor: pointer;
+}
+ 
+ li{
+     list-style: none;
+     padding: 10px;
+     background-color: #d4b819fd;
+     margin: 5px;
+     border-bottom-right-radius: 7px;
+   }
+   .todo-container{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+   }
+   .todo-list{
+       
+   }
