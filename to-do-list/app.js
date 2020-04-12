@@ -10,7 +10,6 @@
 
  function addToDo(){
      event.preventDefault();
-     console.log('working');
      //todo DiV
      const todoDiv = document.createElement("div");
      todoDiv.classList.add("todo");
