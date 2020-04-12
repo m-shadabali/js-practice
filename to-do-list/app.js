@@ -2,9 +2,17 @@
  let userData = document.getElementById('userInput');
  let addBtn = document.getElementById('add');
  let parentContainer = document.getElementById('todo-list');
+ let todoList  = document.querySelector('#todo-list');
 
  //Eventlisner
- addBtn.addEventListener('click', addToDo)
+ todoList.addEventListener('click', function(e){
+    const item = e.target;
+    if(item.classList[0] === "delete-btn") {
+        todoInput.remove();
+    }
+ });
+ addBtn.addEventListener('click', addToDo);
+  
 
  //function
 
@@ -25,8 +33,8 @@
      //delete button
      const deleteButton = document.createElement('button');
      deleteButton.innerHTML = '<i class = "fas fa-trash"></i>';
-     deleteButton.classList.add('deleteButton');
+     deleteButton.classList.add('delete-btn');
      todoDiv.appendChild(deleteButton);
      parentContainer.appendChild(todoDiv);
      userData.value = "";
- }
+ };
