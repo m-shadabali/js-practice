@@ -9,7 +9,13 @@ MessageMixer.countCharacter = function(inputString, inputCharacter) {
       }
     return count; 
   };
+  MessageMixer.palindrome = function(str){
+  return `${str} ${MessageMixer.reverseWord(str)}`;
   
+  }
+  MessageMixer.pigLatin = function(sentence, character){
+    return sentence.split(' ').join(character + ' ');
+  }
   MessageMixer.capitalizeFirstCharacterOfWords = function(string) {
     let arr = string.split(" ");  
       for (let i = 0; i < arr.length; i++) {  
@@ -51,6 +57,5 @@ MessageMixer.countCharacter = function(inputString, inputCharacter) {
   };
   const MessageMixer = {
   
-  }
-  
-  
+  };
+  export {countCharacter, capitalizeFirstCharacterOfWords, reverseWord, reverseAllWords, replaceFirstOccurence, replaceAllOccurrences, encode, palindrome, pigLatin};
