@@ -46,7 +46,7 @@ todoList.addEventListener('click', deleteCheck);
         })
       }
      //check Mark
-     
+
      if(item.classList[0] === "complete-btn"){
         const todo = item.parentElement;
         todo.classList.toggle('completed')
