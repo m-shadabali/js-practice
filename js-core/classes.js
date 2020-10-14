@@ -108,3 +108,27 @@ let kushal = createUser('Kusal', 20);
 let alisha = createUser('Alisha', 10);
 let deepak = createUser('Deepak', 20);
 */
+
+function createUser(name, score = 0) {
+    //let user = Object.create(createUser.prototype);
+     this.name = name;
+     this.score = score;
+    //  return user;
+     
+   
+ }
+ createUser.prototype = {
+     incrementScore:function () {
+         console.log(this.name)
+         this.score++
+         return this.score
+     },
+     decrementScore:function () {
+         this.score--
+         return this.score
+     },
+ };
+ let shadab = new createUser('Shadab', 10);
+ let kushal = new createUser('Kusal', 20);
+ let alisha = new createUser('Alisha', 10);
+ let deepak = new createUser('Deepak', 20);
