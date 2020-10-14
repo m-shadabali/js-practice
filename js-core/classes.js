@@ -83,7 +83,16 @@ let alisha = createUser('Alisha', 10);
 let deepak = createUser('Deepak', 20);
 */
 
-let userMethod = {
+/*
+function createUser(name, score = 0) {
+   let user = Object.create(createUser.prototype);
+    user.name = name;
+    user.score = score;
+    return user;
+    
+  
+}
+createUser.prototype = {
     incrementScore:function () {
         console.log(this.name)
         this.score++
@@ -93,14 +102,9 @@ let userMethod = {
         this.score--
         return this.score
     },
-}
-function createUser(name, score = 0) {
-    let user = Object.create(userMethod);
-    user.name = name;
-    user.score = score;
-    return user;
-}
+};
 let shadab = createUser('Shadab', 10);
 let kushal = createUser('Kusal', 20);
 let alisha = createUser('Alisha', 10);
 let deepak = createUser('Deepak', 20);
+*/
